@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allez-voyage</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">VOYAGE</a>
+        <div class="nav-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Reservation.html">Reservation</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="#">infos</a></li>
+        </ul>
+        </div>
+        <img src="img/menu-btn.png" alt="menu-btn" class="menu-hamburger">
+    </nav>
+    
+    <header>
+        <h1 class="big-title">VOYAGE</h1>
+        <div>
+        <h2>bienvenue dans notre site web pour reserver et voyager</h2>
+        <a href="#" class="connecter">Se Connecter</a>
+        <a href="#" class="s'inscrire">S'incrire</a>
+        </div>    
+    </header>
+    <main></main>
+    <footer>
+        <ul class="lang">
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <ul class="creer">
+            <li>creer par:</li>
+            <li>abderahman iskourne</li>
+        </ul>
+    </footer>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener("click",()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+</body>
+</html>

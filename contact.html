@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allez-voyage</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">VOYAGE</a>
+        <div class="nav-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Reservation.html">Reservation</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="#">infos</a></li>
+        </ul>
+        </div>
+        <img src="img/menu-btn.png" alt="menu-btn" class="menu-hamburger">
+    </nav>
+    
+    <header>
+        <h1 class="big-title">VOYAGE</h1>
+        <div>
+        <h2>bienvenue dans notre site web pour reserver et voyager</h2>
+        <a href="#" class="contacter">Contacter</a>
+        </div>    
+    </header>
+    <main></main>
+    <section>
+        <form action="">
+            <img src="img/fermer.png" id="fermer" alt="">
+            <label for="name">votre nom</label>
+            <input type="text" id="name"><br>
+            <label for="préname">votre prénom</label>
+            <input type="text" id="prénom"><br>
+            <label for="email">votre email</label>
+            <input type="text" id="email"><br>
+            <label for="commentaire">votre commentaire</label>
+            <textarea name="com" id="commentaire" cols="30" rows="40"></textarea>
+        </form>
+    </section>
+    <footer>
+        <ul class="lang">
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <ul class="creer">
+            <li>creer par:</li>
+            <li>abderahman iskourne</li>
+        </ul>
+    </footer>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener("click",()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+        //contact
+        const btnc=document.querySelector(".contacter");
+        const contacter =document.querySelector("section");
+        const fermer =document.querySelector("#fermer")
+        btnc.addEventListener('click',()=>{
+        contacter.classList.toggle('g')})
+        fermer.addEventListener('click',()=>{
+        contacter.classList.toggle('g')})
+
+    </script>
+
+</body>
+</html>

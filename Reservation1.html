@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="stylere.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">VOYAGE</a>
+        <div class="nav-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Reservation1.html">Reservation</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="#">infos</a></li>
+        </ul>
+        </div>
+        <img src="img/menu-btn.png" alt="menu-btn" class="menu-hamburger">
+    </nav>
+    <main></main>
+    <header><h1 class="big-title">VOYAGE</h1></header>
+    <section class="search">
+        <div class="searchbar">
+        <input type="search" name="search" id="search" placeholder="serch">
+        </div>
+    </section>
+    <section class="reservation">
+        <div class="egybte" >
+            <h3>egypte</h3>
+            <img src="img/egybte.jpeg" alt="">
+            <h4>description</h4>
+            <p>Lorem ipsum dolor sit elit. Dicta culpa corrupti modi officiis fuga, maiores accusamus obcaecati! Facilis labor</p>
+             <input type="button" value="Reserver" class="res">
+        </div>
+        <div class="italy">
+            <h3>Italy</h3>
+            <img src="img/italy.jpeg" alt="">
+            <h4>description</h4>
+            <p>Lorem ipsum dolor sit elit. Dicta culpa corrupti modi officiis fuga, maiores accusamus obcaecati! Facilis labor</p>
+             <input type="button" value="Reserver" class="res">
+        </div>
+        <div class="morroco">
+            <h3>Maroc</h3>
+            <img src="img/marrakech.jpeg" alt="">
+            <h4>description</h4>
+            <p>Lorem ipsum dolor sit elit. Dicta culpa corrupti modi officiis fuga, maiores accusamus obcaecati! Facilis labor</p>
+             <input type="button" value="Reserver" class="res">
+        </div>
+        <div class="france">
+            <h3>France</h3>
+            <img src="img/paris.jpeg" alt="">
+            <h4>description</h4>
+            <p>Lorem ipsum dolor sit elit. Dicta culpa corrupti modi officiis fuga, maiores accusamus obcaecati! Facilis labor</p>
+             <input type="button" value="Reserver" class="res">
+             
+        </div>
+        <div class="rwanda">
+            <h3>Rwanda</h3>
+            <img src="img/rwanda.jpeg" alt="">
+            <h4>description</h4>
+            <p>Lorem ipsum dolor sit elit. Dicta culpa corrupti modi officiis fuga, maiores accusamus obcaecati! Facilis labor</p>
+             <input type="button" value="Reserver" class="res">
+        
+        </div>
+        <div class="russia">
+            <h3>Russia</h3>
+            <img src="img/russia.jpeg" alt="">
+            <h4>description</h4>
+            <p>Lorem ipsum dolor sit elit. Dicta culpa corrupti modi officiis fuga, maiores accusamus obcaecati! Facilis labor</p>
+             <input type="button" value="Reserver" class="res">
+             
+        </div>
+        <div class="portugal">
+            <h3>Portugal</h3>
+            <img src="img/portugal.jpg" alt="">
+            <h4>description</h4>
+            <p>Lorem ipsum dolor sit elit. Dicta culpa corrupti modi officiis fuga, maiores accusamus obcaecati! Facilis labor</p>
+            <input type="button"  value="Reserver" class="res">
+             
+        </div>
+        <div class="suisse">
+            <h3>Suisse</h3>
+            <img src="img/swise.jpeg" alt="">
+            <h4>description</h4>
+            <p>Lorem ipsum dolor sit elit. Dicta culpa corrupti modi officiis fuga, maiores accusamus obcaecati! Facilis labor</p>
+             <input type="button" value="Reserver" class="res">
+             
+        </div>
+    </section>
+    <div class="container">
+        <img src="img/fermer.png" id="fermer" alt="#">
+        <div class="information">
+           <h3>Reservation</h3>
+           <video  autoplay muted loop>
+            <source src="vedio/video.mp4" type="video/mp4" >
+           </video>
+           <form action="">
+                <label for="name">Titulaire de la carte</label>
+                <input type="text" id="name" name="name" placeholder="titulaire de la carte"><br>
+                <label for="n">Numéro de la carte</label>
+                <input type="text" name="n" id="n" placeholder="numéro de carte">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cv" placeholder="CVV">
+           </form>
+        </div>
+    </div>
+    <footer>
+        <ul class="lang">
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <ul class="creer">
+            <li>creer par:</li>
+            <li>abderahman iskourne</li>
+        </ul>
+    </footer>
+    <script>
+        //navbar burger
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener("click",()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+        //reservation
+        const container = document.querySelector(".container")
+        const btn = document.getElementsByClassName("res")
+        for(let i=0;i<btn.length;i++){
+            btn[i].addEventListener("click",()=>{container.classList.toggle('plus')})
+        }
+        const btnf = document.getElementById("fermer")
+        console.log(btnf)
+        btnf.addEventListener('click',()=>{container.classList.toggle('plus')})
+
+    </script>
+</body>
+</html>
